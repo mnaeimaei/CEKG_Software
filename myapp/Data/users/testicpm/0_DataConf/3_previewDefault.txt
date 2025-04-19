@@ -1,0 +1,16 @@
+eventLogDiv=C_EventLog
+otherEntitiesDiv=C_EventLog
+otherEntitiesRelDiv=C_EventLog
+activitiesValueDiv=C_EventLog
+domainDiv=C_EventLog
+iCDDiv=C_EventLog
+snomedCtRelNodeDiv=C_EventLog
+snomedCtRelDiv=C_EventLog
+dk1Div=C_EventLog
+dk2Div=C_EventLog
+dk3Div=C_EventLog
+dk4Div=C_EventLog
+dk5Div=C_EventLog
+dk61Div=C_EventLog
+dk62Div=C_EventLog
+dk7Div=C_EventLog

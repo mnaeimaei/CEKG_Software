@@ -1,0 +1,1 @@
+['C_EventLog', 'D_EntitiesAttributes', 'D_EntitiesAttributeRel', 'E_ActivityAttributes', 'F_ActivitiesDomain', 'H_ICD', 'I_SCT_Node', 'I_SCT_REL', 'J_DK1', 'K_DK2', 'L_DK3', 'M_DK4', 'N_DK5', 'O_DK6_1', 'O_DK6_2', 'P_DK7']

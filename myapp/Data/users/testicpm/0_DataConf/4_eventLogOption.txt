@@ -1,0 +1,1 @@
+['Event_ID', 'Timestamp', 'Activity', 'Activity_Synonym', 'Activity_Instance_ID', 'Activity_Attributes_ID', 'Entity1_Origin', 'Entity1_ID', 'Entity2_Origin', 'Entity2_ID']

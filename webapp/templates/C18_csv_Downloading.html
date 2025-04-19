@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../static/css/C18_csv_Downloading.css">
+</head>
+
+
+<body>
+<h1>Please download the CSV file and upload it to the cloud database:</h1>
+<div class="container">
+
+    <button id="downloadBtn">Download CSV Files</button>
+    <script>
+        document.getElementById('downloadBtn').addEventListener('click', function () {
+            window.location.href = "{% url 'downloadingCsvName' %}?download=true";  // Ensure the URL is correct
+        });
+    </script>
+
+
+    <form id="allFormC18" method="post">
+        <a>Click to go the next page:</a>
+        <div id="nextButtonDiv" style="display:block;">
+            {% csrf_token %}
+            {{ nextButton.as_p }}
+        </div>
+    </form>
+
+    <script src="../static/js/C18_csv_Downloading.js" type="module"></script>
+
+</div>
+
+</body>
+</html>

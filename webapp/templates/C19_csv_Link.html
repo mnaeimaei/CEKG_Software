@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../static/css/C19_csv_Link.css">
+
+</head>
+
+<body>
+<h1>Please enter your Neo4j Aura credentials:</h1>
+
+
+<form id="allForm2" method="post">
+
+    <div id="logDiv" style="display:block;">
+        <h2>Enter Neo4j URI</h2>
+        {% csrf_token %}
+        {{ logLink.as_p }}
+    </div>
+
+    <div id="entityRelDiv" style="display:block;">
+        <h2>Enter Neo4j Username</h2>
+        {% csrf_token %}
+        {{ entityRelLink.as_p }}
+    </div>
+
+    <div id="otherEntitiesDiv" style="display:block;">
+        <h2>Enter Neo4j Password</h2>
+        {% csrf_token %}
+        {{ otherEntitiesLink.as_p }}
+    </div>
+
+    <div id="activityPropertiesDiv" style="display:block;">
+        <h2>Enter Neo4j URI</h2>
+        {% csrf_token %}
+        {{ activityPropertiesLink.as_p }}
+    </div>
+
+    <div id="domainDiv" style="display:block;">
+        <h2>Enter Neo4j Username</h2>
+        {% csrf_token %}
+        {{ domainLink.as_p }}
+    </div>
+
+    <div id="icdDiv" style="display:block;">
+        <h2>Enter Neo4j Password</h2>
+        {% csrf_token %}
+        {{ icdLink.as_p }}
+    </div>
+
+    <div id="octNodeDiv" style="display:block;">
+        <h2>Enter Neo4j URI</h2>
+        {% csrf_token %}
+        {{ octNodeLink.as_p }}
+    </div>
+
+    <div id="octRelDiv" style="display:block;">
+        <h2>Enter Neo4j Username</h2>
+        {% csrf_token %}
+        {{ octRelLink.as_p }}
+    </div>
+
+    <div id="dk3Div" style="display:block;">
+        <h2>Enter Neo4j Password</h2>
+        {% csrf_token %}
+        {{ dk3Link.as_p }}
+    </div>
+
+    <div id="dk4Div" style="display:block;">
+        <h2>Enter Neo4j URI</h2>
+        {% csrf_token %}
+        {{ dk4Link.as_p }}
+    </div>
+
+    <div id="dk5Div" style="display:block;">
+        <h2>Enter Neo4j Username</h2>
+        {% csrf_token %}
+        {{ dk5Link.as_p }}
+    </div>
+
+    <div id="dk61Div" style="display:block;">
+        <h2>Enter Neo4j Password</h2>
+        {% csrf_token %}
+        {{ d61Link.as_p }}
+    </div>
+
+    <div id="dk62Div" style="display:block;">
+        <h2>Enter Neo4j URI</h2>
+        {% csrf_token %}
+        {{ dk62Link.as_p }}
+    </div>
+
+    <div id="dk7Div" style="display:block;">
+        <h2>Enter Neo4j Username</h2>
+        {% csrf_token %}
+        {{ dk7Link.as_p }}
+    </div>
+
+
+    <div id="config" data-g-log="{{ defaultLog }}"
+         data-g-entityrel="{{ defaultEntityRel }}"
+         data-g-otherentities="{{ defaultOtherEntities }}"
+         data-g-activityproperties="{{ defaultActivityProperties }}"
+         data-g-domain="{{ defaultDomain }}"
+         data-g-icd="{{ defaultIcd }}"
+         data-g-octnode="{{ defaultOctNode }}"
+         data-g-octrel="{{ defaultOctRel }}"
+         data-g-dk3="{{ defaultDk3 }}"
+         data-g-dk4="{{ defaultDk4 }}"
+         data-g-dk5="{{ defaultDk5 }}"
+         data-g-dk61="{{ defaultDk61 }}"
+         data-g-dk62="{{ defaultDk62 }}"
+         data-g-dk7="{{ defaultDk7 }}"
+         style="display: none;"></div>
+
+
+    <div id="nextButtonDiv" style="display:block;">
+        {% csrf_token %}
+        {{ nextButton.as_p }}
+    </div>
+
+    <script src="../static/js/C19_csv_Link_Module.js" type="module"></script>
+
+    <script src="../static/js/C19_csv_Link.js" type="module"></script>
+
+
+</form>
+
+
+</body>
+</html>

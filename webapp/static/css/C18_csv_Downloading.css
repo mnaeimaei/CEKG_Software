@@ -1,0 +1,79 @@
+/* Basic reset for body and html */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5; /* Consistent light grey background */
+    color: #333; /* Dark grey text for readability */
+}
+
+/* Heading styles for clear visibility */
+h1 {
+    color: #0056b3; /* Blue for headings to stand out */
+    text-align: center;
+    margin-top: 20px; /* Space above the heading */
+    margin-bottom: 40px; /* More space below the heading to separate from form */
+}
+
+/* Container styling to center and visually define the area */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: auto;
+    width: 90%; /* Effective width for responsive design */
+    max-width: 600px; /* Maximum width to maintain aesthetics */
+    background-color: #ffffff; /* White background to contrast with the page */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    border-radius: 5px; /* Rounded corners for a smoother visual appeal */
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%; /* Form takes full width of the container */
+    box-shadow: none; /* No additional shadow needed inside the container */
+}
+
+/* Input field styling */
+input[type="file"] {
+    padding: 10px;
+    margin-bottom: 20px; /* Space between the input and the button */
+    width: 100%; /* Ensures the input field matches form width */
+    border: 1px solid #ccc; /* Subtle border for the input field */
+    border-radius: 4px; /* Rounded corners for the input field */
+}
+
+/* Button styling to match the theme */
+button {
+    background-color: #007bff; /* Bright blue for primary actions */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px; /* Slightly larger font size for better readability */
+    width: 100%; /* Match the width of the input field for consistency */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover for visual feedback */
+}
+
+/* Responsive adjustments for better accessibility on smaller devices */
+@media (max-width: 768px) {
+    .container {
+        width: 100%; /* Allows the container to take more space on smaller screens */
+        padding: 15px; /* Slightly reduced padding for smaller screens */
+    }
+
+    form {
+        padding: 15px; /* Slightly reduced padding within the form for smaller screens */
+    }
+}

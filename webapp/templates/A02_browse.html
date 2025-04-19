@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../static/css/A02_browse.css">
+
+</head>
+<body>
+<h1>Please upload the dataset</h1>
+
+<form id="allFormA02" method="post" enctype="multipart/form-data">
+
+    {% csrf_token %}
+    <input id="fileInput" type="file" name="excelFile" accept=".xlsx, .xls" required>
+    <div id="fileInputError" style="color: red; display: none;"></div> <!-- Error message container -->
+
+    <div id="progressBarDiv" style="display:none;">
+        <div id="progressBarContainer" class="progress-container">
+            <div id="progressBar" class="progress-bar">0%</div>
+        </div>
+
+    </div>
+    <div id="softProtocol" data-g-prot="{{ softwareProtocol }}" style="display: none;"></div>
+
+
+    <div id="downloadButtonDiv" style="display:block;">
+        {% csrf_token %}
+        <button type="submit" name="DownloadButtonMode" id="runButton">
+            Upload File
+        </button>
+    </div>
+
+
+    <div id="nextButtonDiv" style="display:none;">
+        {% csrf_token %}
+        <button type="submit" name="NxButtonMode" id="nextButton">
+            Next
+        </button>
+    </div>
+
+
+    <script src="../static/js/A02_browse.js" type="module"></script>
+
+
+</form>
+</body>
+</html>

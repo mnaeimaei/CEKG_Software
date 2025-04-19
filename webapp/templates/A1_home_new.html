@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../static/css/A1_home_new.css">
+
+
+</head>
+
+<body>
+<h1>Care pathways options:</h1>
+
+
+<form id="allForm" method="post">
+
+
+    <div id="mainDfgDiv" style="display:block;">
+
+        <div class="container">
+
+            <div class="options-section">
+                <h1>Step1) Type of the care pathway?</h1>
+                {% csrf_token %}
+                {{ mainDfgForm.as_p }}
+            </div>
+
+            <div class="pdfs-section">
+                <div id="Step1_01Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step1_01_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step1_02Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step1_02_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step1_03Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step1_03_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step1_04Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step1_04_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step1_05Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step1_05_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step1_06Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step1_06_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="dFG1Div" style="display:none;">
+
+        <div class="container">
+
+            <div class="options-section">
+                <h1>Step2) Would you like to consider which details about activities in the care pathway?</h1>
+                {% csrf_token %}
+                {{ dfg1Form.as_p }}
+            </div>
+
+            <div class="pdfs-section">
+                <div id="Step2_1Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_1_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step2_2Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_2_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step2_3Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_3_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step2_4Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_4_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step2_5Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_5_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step2_6Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_6_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step2_7Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_7_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step2_8Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_8_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="dFG2Div" style="display:none;">
+        <div class="container">
+
+            <div class="options-section">
+                <h1>Step2) Would you like to consider which details about activities in the care pathway?</h1>
+                {% csrf_token %}
+                {{ dfg2Form.as_p }}
+            </div>
+
+            <div class="pdfs-section">
+                <div id="Step2_09Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_09_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step2_10Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_10_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step2_11Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_11_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step2_12Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_12_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step2_13Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_13_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step2_14Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_14_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step2_15Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_15_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step2_16Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_16_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="dFG3Div" style="display:none;">
+        <div class="container">
+
+            <div class="options-section">
+                <h1>Step2) Would you like to consider which details about activities in the care pathway?</h1>
+                {% csrf_token %}
+                {{ dfg3Form.as_p }}
+            </div>
+
+            <div class="pdfs-section">
+                <div id="Step2_17Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_17_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step2_18Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_18_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step2_19Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_19_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step2_20Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_20_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step2_21Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_21_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step2_22Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_22_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step2_23Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_23_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step2_24Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_24_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step2_25Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_25_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step2_26Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_26_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step2_27Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_27_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step2_28Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_28_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="dFG4Div" style="display:none;">
+        <div class="container">
+
+            <div class="options-section">
+                <h1>Step2) Would you like to consider which details about activities in the care pathway?</h1>
+                {% csrf_token %}
+                {{ dfg4Form.as_p }}
+            </div>
+
+            <div class="pdfs-section">
+                <div id="Step2_29Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_29_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step2_30Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_30_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step2_31Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_31_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step2_32Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_32_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step2_33Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_33_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step2_34Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_34_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step2_35Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_35_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step2_36Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_36_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step2_37Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_37_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step2_38Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_38_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step2_39Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_39_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step2_40Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_40_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="dFG5Div" style="display:none;">
+        <div class="container">
+
+            <div class="options-section">
+                <h1>Step2) Would you like to consider which details about activities in the care pathway?</h1>
+                {% csrf_token %}
+                {{ dfg5Form.as_p }}
+            </div>
+
+            <div class="pdfs-section">
+                <div id="Step2_41Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_41_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step2_42Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_42_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step2_43Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_43_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step2_44Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_44_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step2_45Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_45_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step2_46Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_46_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step2_47Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_47_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step2_48Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_48_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step2_49Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_49_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step2_50Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_50_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step2_51Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_51_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step2_52Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_52_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="dFG6Div" style="display:none;">
+        <div class="container">
+
+            <div class="options-section">
+                <h1>Step2) Do you prefer to show only one of the following: Admission Disorders, Admission Treated
+                    Disorders,
+                    Admission Not Treated Disorders, or Admission New Disorders, or all of them together?</h1>
+                {% csrf_token %}
+                {{ dfg6Form.as_p }}
+            </div>
+
+            <div class="pdfs-section">
+                <div id="Step2_53Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_53_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step2_54Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step2_54_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="inputDiv" style="display:none;">
+        <div class="container">
+
+            <div class="options-section">
+                <h1>Step 3: Entities to be included in care pathways?</h1>
+                {% csrf_token %}
+                {{ inputform.as_p }}
+            </div>
+
+            <div class="pdfs-section">
+                <div id="Step3_01Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step3_01_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step3_02Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step3_02_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step3_03Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step3_03_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step3_04Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step3_04_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step3_05Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step3_05_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step3_06Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step3_06_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step3_07Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step3_07_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step3_08Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step3_08_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step3_09Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step3_09_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="inputDFG6Div" style="display:none;">
+        <div class="container">
+
+            <div class="options-section">
+                <h1>Step 3: Entities to be included in care pathways.</h1>
+                {% csrf_token %}
+                {{ inputFormDFG6.as_p }}
+            </div>
+
+            <div class="pdfs-section">
+                <div id="Step3_optionDiv" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step3_option_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="activityDiv" style="display:none;">
+        <div class="container">
+
+            <div class="options-section">
+                <h1>Step4) Activity labels</h1>
+                {% csrf_token %}
+                {{ activityForm.as_p }}
+            </div>
+
+            <div class="pdfs-section">
+                <div id="Step4_01Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step4_01_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step4_02Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step4_02_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+                <div id="Step4_03Div" style="display:none;">
+                    <iframe src="{% url 'serve_pdf_func_step4_03_name' %}" style="width:100%; height:100%;"
+                            frameborder="0">
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="activityDFG6Div" style="display:none;">
+        <div class="container">
+
+            <div class="options-section">
+                <h1>Step4) Activity labels</h1>
+                {% csrf_token %}
+                {{ activityFormDFG6.as_p }}
+            </div>
+
+            <div class="pdfs-section">
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="nextButton1Div" style="display:none;">
+        {% csrf_token %}
+        {{ nextButton1.as_p }}
+    </div>
+
+    <script src="../static/js/A1_home_new_step0.js" type="module"></script>
+    <script src="../static/js/A1_home_new_step1.js" type="module"></script>
+    <script src="../static/js/A1_home_new_step2.js" type="module"></script>
+    <script src="../static/js/A1_home_new_step3.js" type="module"></script>
+    <script src="../static/js/A1_home_new_step4.js" type="module"></script>
+
+
+</form>
+
+
+</body>
+</html>
